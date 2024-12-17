@@ -1,0 +1,15 @@
+body {
+  /*background-color: black;*/
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  color: white;
+  background-color: rgb(10, 4, 85);
+  text-align: center;
+}
+
+.searchbar input {
+  
+}
