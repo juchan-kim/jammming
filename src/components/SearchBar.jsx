@@ -1,10 +1,15 @@
 import React from 'react'
 
-export default function SearchBar() {
+export default function SearchBar(props) {
+  
+  const clickSubmit = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div>
-      <form action="">
-        <input type="text"/>
+      <form action="" onSubmit={clickSubmit}>
+        <input type="text" value={props.searchInput} onChange={props.handleChange}/>
         <button>Search</button>
       </form>
     </div>
